@@ -278,7 +278,7 @@ header .banner-slide .inner-content {
   align-items: center;
   padding: 0.5rem;
   border-radius: 15px;
-  background: linear-gradient(135deg, #87CEEB, #4a90e2);
+  background: linear-gradient(135deg, #a4cefe, #68abf7);
   overflow: hidden;
 }
 
@@ -947,11 +947,25 @@ transform: translateY(-5px);
   gap: 1.5rem;
   margin-inline: auto;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .comentario {
+    flex-basis: calc(50% - 1.5rem); /* Ocupa 50% da largura em telas médias */
+  }
+}
+
+@media (max-width: 480px) {
+  .comentario {
+    flex-basis: 100%; /* Ocupa 100% da largura em telas pequenas */
+  }
+}
+
 /* Final comentarios positivos */
 
 /* Início Rodapé */
 footer {
-  background-color: var(--segundopreto);
+  background-color: #21005f;
   color: #fff;
   width: 100vw; /* Define a largura para ocupar toda a viewport */
   margin-left: calc((100vw - 100%) / -2); /* Corrige o alinhamento */
