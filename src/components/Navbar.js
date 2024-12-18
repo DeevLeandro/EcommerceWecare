@@ -52,7 +52,11 @@ export default function Navbar() {
     <div className="nav">
       <div className="inner-content">
         <h1 className="logo">
-          WECARE<span>Aesthetics</span>
+        <img 
+             src="/images/LOGO.png" 
+             alt="Ofertas de produtos" 
+             className="responsive-img" 
+              />
         </h1>
         <nav className={`${showMenu && "show"}`}>
           <ul>

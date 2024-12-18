@@ -263,74 +263,78 @@ nav ul li button:hover {
 header {
   background-color: #fff;
   overflow: hidden;
-  padding: 0;
-  max-width: 100%;
-  margin-bottom: 2rem; /* Mantém um espaçamento abaixo do banner */
-  margin-top: 0.8rem;
+  padding: 1rem;
+  height: 325px;
 }
 
 header .banner-slide {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw; /* Garantir que ocupe toda a largura da tela */
-  height: 60vh; /* Define altura do banner como 60% da altura da tela */
 }
 
 header .banner-slide .inner-content {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 15px;
-  background: linear-gradient(to right, #deecfc, #68abf7);
+  background: linear-gradient(135deg, #87CEEB, #4a90e2);
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-  gap: 1rem;
-  position: absolute; /* Permite que o conteúdo fique sobre a imagem */
-  z-index: 1; /* Garantir que o conteúdo apareça acima da imagem */
+}
+
+header .banner-slide .left-side {
+  color: #fff;
+  max-width: 50%;
+  z-index: 2;
+}
+
+header .banner-slide .left-side h2 {
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 400px;
+  margin-left: 20%;
 }
 
 header .banner-slide .right-side img {
-  width: 100vw; /* A imagem ocupa toda a largura da tela */
-  height: 100%; /* A imagem ocupa toda a altura do banner */
-  object-fit: cover; /* A imagem se adapta ao contêiner sem distorção */
-  position: absolute; /* A imagem fica atrás do conteúdo */
-  top: 0;
-  left: 0;
-  z-index: 0; /* Garantir que a imagem fique atrás do conteúdo */
+  width: 75%;
+  border-radius: 15px;
+  display: flex;
+  margin-bottom: 300px;
+  margin-left: 100px;
 }
 
 /* Botões do slide */
 .slider-arrows {
   position: absolute;
-  top: 50%; /* Centraliza verticalmente */
+  top: 35%;
   width: 100%;
-  right: 2px;
+  right: 1px;
+  left: 1px;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-50%); /* Ajusta o posicionamento para o centro */
+  transform: translateY(-80%);
   pointer-events: none;
 }
 
 .arrow {
   background: rgba(255, 255, 255, 0.137);
   border: none;
-  border-radius: 50%;
-  padding: 15px;
+  border-radius: 15px;
+  padding: 20px;
   cursor: pointer;
   pointer-events: auto;
   transition: background-color 0.2s;
   font-size: 24px;
   color: var(--seconda-cor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .arrow:hover {
   background: rgba(255, 255, 255, 0.623);
 }
-
 
 /* Oculta os botões do slide em telas menores */
 @media (max-width: 768px) {
@@ -491,7 +495,7 @@ header .banner-slide .right-side img {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  color: #68abf7;
+  color: #21008d;
   margin-bottom: 0.5rem;
   position: relative;
 }

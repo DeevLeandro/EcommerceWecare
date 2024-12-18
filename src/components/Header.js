@@ -24,9 +24,12 @@ export default function Header() {
       <Slider ref={sliderRef} {...settings}>
         <div className="banner-slide">
           <div className="inner-content">
+            <div className="left-side">
+              <h2>Realce sua beleza com os melhores produtos! 🌟 Cuide-se como você merece.</h2>
+            </div>
             <div className="right-side">
               <img 
-                src="/images/BannerWECARE.jpg" 
+                src="/images/Banner.png" 
                 alt="Ofertas de produtos" 
                 className="responsive-img" 
               />
@@ -36,9 +39,12 @@ export default function Header() {
 
         <div className="banner-slide">
           <div className="inner-content">
+            <div className="left-side">
+              <h2>Os Melhores Produtos para Realçar sua Beleza ✨ Qualidade e confiança para cada detalhe do seu cuidado!</h2>
+            </div>
             <div className="right-side">
               <img 
-                src="/images/BannerWECARE3.jpg" 
+                src="/images/Banner2.png" 
                 alt="Frete Grátis" 
                 className="responsive-img" 
               />
@@ -48,9 +54,12 @@ export default function Header() {
 
         <div className="banner-slide">
           <div className="inner-content">
+            <div className="left-side">
+              <h2>Descubra os Melhores Produtos de Beleza para Você 🌸 Cuide-se, brilhe e sinta-se incrível todos os dias!</h2>
+            </div>
             <div className="right-side">
               <img 
-                src="/images/BannerWECARE2.jpg" 
+                src="/images/Banner3.png" 
                 alt="Equipamentos para negócios" 
                 className="responsive-img" 
               />
